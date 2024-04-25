@@ -6,7 +6,6 @@ const Service = () => {
     return (
         <>
         <Header/>
-        <h1>Service</h1>
         </>
       );
 };

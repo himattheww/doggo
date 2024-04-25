@@ -16,7 +16,7 @@ const Homepage = () => {
               Selamat Datang di DogShop
             </Typography>
             <Typography variant="body1" sx={homepageStyle.description}>
-              DogShop adalah tempat yang sempurna untuk Anda dan anjing kesayangan Anda. Kami menyediakan berbagai layanan berkualitas tinggi untuk memastikan kesehatan dan kebahagiaan anjing Anda.
+            DogShop adalah tujuan terbaik untuk Anda dan anjing kesayangan Anda. Temukan layanan berkualitas tinggi seperti grooming profesional, ruang bermain yang aman, dan makanan anjing premium. Mari mulai petualangan baru bersama anjing Anda hari ini!
             </Typography>
           </Grid>
 

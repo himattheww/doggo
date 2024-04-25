@@ -2,13 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Toolbar, AppBar, Typography, Button } from "@mui/material";
 import { headerStyle } from "../Styling/Headerstyle";
+import logo2 from "../Assets/Logo/logo2.png";
+
+
+
 
 const Header = () => {
   return (
     <>
       <AppBar position="static" sx={(headerStyle.header)}>
-        <Toolbar>
+        <Toolbar sx={(headerStyle.toolbar)}>
+        <img src={logo2} alt="Logo" height="40" sx={(headerStyle.logo)} />
           <Typography variant="h6" component="div" sx={(headerStyle.typhographyx)}>
+
             DogShop
           </Typography>
           <Link to="/">

@@ -6,7 +6,6 @@ const Blog = () => {
     return (
         <>
         <Header/>
-        <h1>Blog</h1>
         </>
       );
 };
