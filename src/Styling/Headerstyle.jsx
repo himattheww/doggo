@@ -8,7 +8,7 @@ const header = {
 
 const logo = {
   justifyContent: "flex-start",
-  marginRight: "10px", // Jarak antara loo dan teks
+  marginRight: "10px", // Jarak antara logo dan teks
   height: "40px", // Ukuran tinggi logo
 };
 
