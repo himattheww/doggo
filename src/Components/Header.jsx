@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Toolbar, AppBar, Typography, Button } from "@mui/material";
-import { headerStyle } from "./Headerstyle";
+import { headerStyle } from "../Styling/Headerstyle";
 
 const Header = () => {
   return (
