@@ -1,12 +1,12 @@
-import goldenretriever from "../Assets/GoldenRetriever.jpg";
+// import goldenretriever from "../Assets/GoldenRetriever.jpg";
 
 const container = {
   fontFamily: "Roboto, sans-serif",
-  backgroundColor: "#FFFFFF", // Warna latar belakang
-  padding: "50px 20px",
-  backgroundImage: `url(${goldenretriever})`, // Gambar latar belakang
+  backgroundColor: "#5d4037",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  padding: "50px",
   minHeight: "100vh", // Biar layar penuh
   display: "flex",
   flexDirection: "column",
@@ -15,29 +15,6 @@ const container = {
   textAlign: "center",
 };
 
-const heading = {
-  fontFamily: "Roboto, sans-serif",
-  fontWeight: 700,
-  fontSize: "3rem",
-  color: "#000000",
-  marginBottom: "20px",
-};
-
-const description = {
-  fontFamily: "Roboto, sans-serif",
-  fontWeight: 400,
-  fontSize: "1.2rem",
-  color: "#000000",
-  marginBottom: "40px",
-};
-
-const paper = {
-  padding: "30px",
-};
-
 export const servicePageStyle = {
   container,
-  heading,
-  description,
-  paper,
 };
