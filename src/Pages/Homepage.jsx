@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
-import { Typography, Grid, Button, Box } from "@mui/material";
+import { Typography, Grid, Button, Box, Container } from "@mui/material";
 import { homepageStyle } from "../Styling/Homepagestyle";
 
 const Homepage = () => {
   return (
     <>
+    {/* jadi biar dia ga white space kasih padding 0 dan margin 0 dulu */}
+    <Container maxWidth="100%" style={{ padding: 0, margin: 0 }}>
       <Header />
       <Box component="section" sx={homepageStyle.container}>
         <Grid container spacing={2}>
@@ -40,6 +42,8 @@ const Homepage = () => {
           </Grid>
         </Grid>
       </Box>
+      </Container>
+
     </>
   );
 };
