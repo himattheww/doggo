@@ -7,6 +7,7 @@ import Product from "./Pages/Product";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,8 @@ function App() {
           <Route exact path="/about" name="About us" element={<About />} />
           <Route exact path="/services" name="Layanan" element={<Service />} />
           <Route exact path="/products" name="Product" element={<Product />} />
+        
+
           <Route exact path="/blog" name="Our Blog" element={<Blog />} />
           <Route exact path="/contact" name="Contact" element={<Contact />} />
         </Routes>

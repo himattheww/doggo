@@ -3,8 +3,6 @@ import Header from "../Components/Header";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import { servicePageStyle } from "../Styling/Servicestyle";
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
-import aboutus1 from "../Assets/About Us Page/Aboutus1.jpg";
-import aboutus4 from "../Assets/About Us Page/Aboutus4.jpg";
 import dogplaying from "../Assets/Services/DogPlaying/dogplay4.jpg"
 import doggrooming from "../Assets/Services/DogGrooming/doggrooming3.jpg"
 import dogtraining from "../Assets/Services/DogTraining/dogtraining3.jpg"

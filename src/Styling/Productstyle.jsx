@@ -1,29 +1,21 @@
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
 
 const container = {
-  fontFamily: "Roboto, sans-serif",
-  backgroundColor: "rgba(255, 255, 255, 0.8)", // Background color with opacity
-  padding: "80px",
   backgroundImage: `url(${goldenretriever})`,
+  fontFamily: "Roboto, sans-serif",
+  backgroundColor: "#5d4037",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-};
-
-const heading = {
-  fontFamily: "Roboto, sans-serif",
-  fontWeight: 700,
-  fontSize: "2.5rem",
-  color: "#000000",
-  marginBottom: "40px",
-};
-
-const card = {
-  maxWidth: 345,
+  padding: "50px",
+  minHeight: "100vh", // Biar layar penuh
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
 };
 
 export const productPageStyle = {
-  container,
-  heading,
-  card,
+  container
 };
