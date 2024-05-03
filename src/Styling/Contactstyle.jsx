@@ -1,11 +1,19 @@
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
 
 const container = {
-    paddingTop: "50px",
-    paddingBottom: "50px",
-    backgroundImage: `url(${goldenretriever})`, // Ganti dengan path sesuai dengan lokasi file gambar Anda
+    backgroundImage: `url(${goldenretriever})`,
+    fontFamily: "Roboto, sans-serif",
+    backgroundColor: "#5d4037",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    padding: "50px",
+    minHeight: "100vh", // Biar layar penuh
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
 };
 
 const heading = {
