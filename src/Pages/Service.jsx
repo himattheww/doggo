@@ -3,17 +3,15 @@ import Header from "../Components/Header";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import { servicePageStyle } from "../Styling/Servicestyle";
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
-import dogplaying from "../Assets/Services/DogPlaying/dogplay4.jpg"
-import doggrooming from "../Assets/Services/DogGrooming/doggrooming3.jpg"
-import dogtraining from "../Assets/Services/DogTraining/dogtraining3.jpg"
-import doghealth from "../Assets/Services/DogHealth/doghealth.jpg"
-
-
-
+import dogplaying from "../Assets/Services/DogPlaying/dogplay4.jpg";
+import doggrooming from "../Assets/Services/DogGrooming/doggrooming3.jpg";
+import dogtraining from "../Assets/Services/DogTraining/dogtraining3.jpg";
+import doghealth from "../Assets/Services/DogHealth/doghealth.jpg";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Footer from "../Components/Footer";
 
 const Service = () => {
   // Konten untuk setiap halaman carousel
@@ -152,6 +150,7 @@ const Service = () => {
           </Carousel>
         </Container>
       </Box>
+      <Footer />
     </>
   );
 };

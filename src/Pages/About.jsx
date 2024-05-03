@@ -8,6 +8,7 @@ import aboutus4 from "../Assets/About Us Page/Aboutus4.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Footer from "../Components/Footer";
 
 const About = () => {
   // Konten untuk setiap halaman carousel
@@ -136,6 +137,7 @@ const About = () => {
           </Carousel>
         </Container>
       </Box>
+      <Footer/>
     </>
   );
 };

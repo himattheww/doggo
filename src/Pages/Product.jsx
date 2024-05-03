@@ -29,9 +29,7 @@ import dogtoys3 from "../Assets/Dog Products/Dog Toys/dog-grooming-kit.jpg";
 import dogtoys4 from "../Assets/Dog Products/Dog Toys/dog-potty.jpg";
 import dogtoys5 from "../Assets/Dog Products/Dog Toys/dog-crate.jpg";
 import dogtoys6 from "../Assets/Dog Products/Dog Toys/dog-toy.webp";
-
-
-
+import Footer from "../Components/Footer";
 
 const Product = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -40,17 +38,33 @@ const Product = () => {
   const carouselProductContent = [
     {
       name: "Dog Food",
-      productName : ["Jinx Dogfood","Nomnom Dogfood","Ollie Dogfood","Pure Balance Dogfood","Red Barn Dogfood","Farmer Dogfood"],
-      description: "Kami menyediakan berbagai jenis makanan anjing yang berkualitas",
-      productDescription: ["1","2","3","4","5","6"],
+      productName: [
+        "Jinx Dogfood",
+        "Nomnom Dogfood",
+        "Ollie Dogfood",
+        "Pure Balance Dogfood",
+        "Red Barn Dogfood",
+        "Farmer Dogfood",
+      ],
+      description:
+        "Kami menyediakan berbagai jenis makanan anjing yang berkualitas",
+      productDescription: ["1", "2", "3", "4", "5", "6"],
       image: dogfood,
-      images: [dogfood1, dogfood2, dogfood3, dogfood4, dogfood5, dogfood6,],
+      images: [dogfood1, dogfood2, dogfood3, dogfood4, dogfood5, dogfood6],
     },
     {
       name: "Dog Accessories, Toys, and Equipment",
-      productName : ["Dog Leash","Dog Collar","Dog Grooming Kit","Dog Potty","Dog Cage","Dog Toy"],
-      description: "Kami menjual asesoris, mainan dan peralatan untuk anjing anda",
-      productDescription: ["1","2","3","4","5","6"],
+      productName: [
+        "Dog Leash",
+        "Dog Collar",
+        "Dog Grooming Kit",
+        "Dog Potty",
+        "Dog Cage",
+        "Dog Toy",
+      ],
+      description:
+        "Kami menjual asesoris, mainan dan peralatan untuk anjing anda",
+      productDescription: ["1", "2", "3", "4", "5", "6"],
       image: dogtoys,
       images: [dogtoys1, dogtoys2, dogtoys3, dogtoys4, dogtoys5, dogtoys6],
     },
@@ -77,7 +91,10 @@ const Product = () => {
           <Grid container spacing={2}>
             {carouselProductContent.map((content, index) => (
               <Grid item xs={12} md={6} key={index}>
-                <Card sx={productPageStyle.card} onClick={() => handleOpenCatalog(content)}>
+                <Card
+                  sx={productPageStyle.card}
+                  onClick={() => handleOpenCatalog(content)}
+                >
                   <CardActionArea>
                     <CardMedia
                       component="img"
@@ -101,8 +118,12 @@ const Product = () => {
         </Container>
       </Box>
       {openCatalog && (
-        <Catalog selectedProduct={selectedProduct} onClose={handleCloseCatalog} />
+        <Catalog
+          selectedProduct={selectedProduct}
+          onClose={handleCloseCatalog}
+        />
       )}
+      <Footer />
     </>
   );
 };
@@ -132,19 +153,27 @@ const Catalog = ({ selectedProduct, onClose }) => {
       aria-describedby="modal-modal-description"
     >
       <Box sx={catalogStyle}>
-        <IconButton
-          aria-label="close"
-          onClick={onClose}
-          sx={closeButtonStyle}
-        >
+        <IconButton aria-label="close" onClick={onClose} sx={closeButtonStyle}>
           <AiFillCloseCircle size={32} />
         </IconButton>
         <Grid container spacing={2} justifyContent="center">
           {selectedProduct &&
             selectedProduct.images.map((image, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
-                <Card sx={{ width: "100%", backgroundColor: "rgba(255, 255, 255, 0.8)" }}> {/* Transparan */}
-                  <CardMedia component="img" height="230" image={image} alt={selectedProduct.name} />
+                <Card
+                  sx={{
+                    width: "100%",
+                    backgroundColor: "rgba(255, 255, 255, 0.8)",
+                  }}
+                >
+                  {" "}
+                  {/* Transparan */}
+                  <CardMedia
+                    component="img"
+                    height="230"
+                    image={image}
+                    alt={selectedProduct.name}
+                  />
                   <CardContent>
                     <Typography gutterBottom variant="h6" component="div">
                       {selectedProduct.productName[index]}

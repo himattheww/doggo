@@ -16,8 +16,9 @@ import {
 } from "@mui/material";
 import { blogPageStyle } from "../Styling/Blogstyle";
 import dogtips from "../Assets/Blog Pages/dog-healthytips.jpeg";
-import dogfunnymoments from "../Assets/Blog Pages/dog-withowner.webp"
-import dogproductreview from "../Assets/Blog Pages/Dog-productreview.jpg"
+import dogfunnymoments from "../Assets/Blog Pages/dog-withowner.webp";
+import dogproductreview from "../Assets/Blog Pages/Dog-productreview.jpg";
+import Footer from "../Components/Footer";
 
 const Blog = () => {
   const [fullscreenVideo, setFullscreenVideo] = useState(null);
@@ -127,6 +128,7 @@ const Blog = () => {
           </Box>
         )}
       </Box>
+      <Footer />
     </>
   );
 };

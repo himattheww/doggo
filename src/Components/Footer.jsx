@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container, Grid, IconButton, Divider } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt, faPhoneAlt, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <Box component="footer" sx={{ backgroundColor: "#333", color: "#fff", py: 4 }}>
+    <Box component="footer" sx={{ backgroundColor: "#333", color: "#fff", py: 2, position: "fixed", bottom: 0, width: "100%", zIndex: 999}}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -44,7 +44,7 @@ const Footer = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Divider sx={{ my: 2 }} />
+        <Divider sx={{ my: 1 }} />
         <Typography variant="body2" align="center" gutterBottom>
           Connect with us on social media:
         </Typography>
