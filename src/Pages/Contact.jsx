@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { contactPageStyle } from "../Styling/Contactstyle";
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
+import Footer from "../Components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -182,6 +183,7 @@ const Contact = () => {
           </Paper>
         </Container>
       </Box>
+      <Footer/>
     </>
   );
 };
