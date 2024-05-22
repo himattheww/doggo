@@ -3,27 +3,15 @@ import Header from "../Components/Header";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import { aboutPageStyle } from "../Styling/Aboutstyle";
 import goldenretriever from "../Assets/GoldenRetriever.jpg";
-import aboutus1 from "../Assets/About Us Page/Aboutus1.jpg";
-import aboutus4 from "../Assets/About Us Page/Aboutus4.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Footer from "../Components/Footer";
+import {content} from "../Importing/Content"
 
 const About = () => {
   // Konten untuk setiap halaman carousel
-  const carouselContent = [
-    {
-      title: "About us",
-      text: "DogShop didirikan pada tahun 20XX oleh [nama pendiri]. Dimulai sebagai sebuah toko kecil di sudut kota, DogShop berkembang menjadi destinasi utama bagi para pecinta anjing di seluruh [lokasi]. Seiring berjalannya waktu, kami terus berkembang dan berkomitmen untuk menyediakan layanan terbaik bagi anjing dan pemiliknya.Visi kami adalah menjadi pusat perawatan anjing terkemuka yang memberikan pengalaman positif bagi setiap pelanggan. Kami berkomitmen untuk memastikan kesehatan, kebahagiaan, dan kesejahteraan anjing-anjing di komunitas kami. Misi kami adalah menyediakan layanan berkualitas tinggi, produk terbaik, dan pengalaman yang ramah bagi semua pelanggan kami.",
-      image: aboutus4,
-    },
-    {
-      title: "Our Team",
-      text: "Tim Dogshop adalah kumpulan ahli yang bersatu dengan satu tujuan: memberikan yang terbaik untuk anjing Anda.Dengan pengalaman yang luas dan cinta mendalam terhadap hewan peliharaan, setiap anggota tim kami adalah individu yang berdedikasi dan berpengetahuan dalam dunia perawatan dan kesehatan anjing. Mulai dari pemilik hingga petugas, kami semua adalah pecinta hewan yang berkomitmen untuk memberikan layanan terbaik kepada anjing dan pemiliknya.Dengan keahlian yang terlatih, kami siap memberikan perawatan, pelatihan, dan perhatian khusus yang dibutuhkan oleh setiap anjing yang datang ke DogShop",
-      image: aboutus1,
-    },
-  ];
+  const carouselContent = content.about_carouselContent;
 
   return (
     <>

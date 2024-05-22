@@ -2,51 +2,20 @@ import React from "react";
 import Header from "../Components/Header";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import { servicePageStyle } from "../Styling/Servicestyle";
-import goldenretriever from "../Assets/GoldenRetriever.jpg";
-import dogplaying from "../Assets/Services/DogPlaying/dogplay4.jpg";
-import doggrooming from "../Assets/Services/DogGrooming/doggrooming3.jpg";
-import dogtraining from "../Assets/Services/DogTraining/dogtraining3.jpg";
-import doghealth from "../Assets/Services/DogHealth/doghealth.jpg";
-
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Footer from "../Components/Footer";
+import { content } from "../Importing/Content";
 
 const Service = () => {
   // Konten untuk setiap halaman carousel
-  const carouselContent = [
-    {
-      title: "Layanan Bermain",
-      text: "Kami menyediakan area bermain yang aman dan menyenangkan bagi anjing Anda. Dengan fasilitas yang lengkap dan pengawasan yang ketat, anjing Anda akan menikmati waktu bermain yang berkualitas.",
-      image: dogplaying,
-    },
-    {
-      title: "Layanan Grooming",
-      text: " Kami menawarkan layanan grooming profesional untuk menjaga penampilan dan kesehatan bulu anjing Anda. Dari mandi, potong kuku, hingga pemotongan rambut, kami memberikan perawatan yang terbaik.",
-      image: doggrooming,
-    },
-    {
-      title: "Layanan Pelatihan",
-      text: " Paket pelatihan khusus yang disesuaikan dengan kebutuhan dan tingkat keterampilan anjing Anda. Dari pelatihan dasar hingga pelatihan lanjutan, kami membantu anjing Anda menjadi lebih patuh dan terampil.",
-      image: dogtraining,
-    },
-    {
-      title: " Layanan Perawatan Kesehatan  ",
-      text: "Kami memberikan perawatan kesehatan yang komprehensif untuk menjaga kesehatan dan kesejahteraan anjing Anda. Layanan termasuk pemeriksaan kesehatan rutin, vaksinasi, dan perawatan medis lainnya.",
-      image: doghealth,
-    },
-  ];
+  const carouselContent = content.service_carouselContent;
 
   return (
     <>
       <Header />
-      <Box
-        sx={{
-          ...servicePageStyle.container,
-          backgroundImage: `url(${goldenretriever})`,
-        }}
-      >
+      <Box sx={servicePageStyle.container}>
         <Container maxWidth="lg">
           <Carousel
             showStatus={false}

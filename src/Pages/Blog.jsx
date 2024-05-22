@@ -15,10 +15,8 @@ import {
   IconButton,
 } from "@mui/material";
 import { blogPageStyle } from "../Styling/Blogstyle";
-import dogtips from "../Assets/Blog Pages/dog-healthytips.jpeg";
-import dogfunnymoments from "../Assets/Blog Pages/dog-withowner.webp";
-import dogproductreview from "../Assets/Blog Pages/Dog-productreview.jpg";
 import Footer from "../Components/Footer";
+import { content } from "../Importing/Content";
 
 const Blog = () => {
   const [fullscreenVideo, setFullscreenVideo] = useState(null);
@@ -31,26 +29,7 @@ const Blog = () => {
     setFullscreenVideo(null);
   };
 
-  const videos = [
-    {
-      title: "Healthy Dog Tips",
-      description: "Berikut cuplikan menjaga kesehatan anjing",
-      image: dogtips,
-      video: "https://www.youtube.com/embed/FA4R9TBWOIU?si=ECGQ_KRqZKoxg1_D",
-    },
-    {
-      title: "Funny Video",
-      description: "Berikut cuplikan moment lucu anjing dan owner",
-      image: dogfunnymoments,
-      video: "https://www.youtube.com/embed/NGFKjWYKKvY?si=PwFPmhJibw24Ep6V",
-    },
-    {
-      title: "Product Review",
-      description: "Berikut cuplikan review produk anjing",
-      image: dogproductreview,
-      video: "https://www.youtube.com/embed/FGR3HL4WRVY?si=jTieKTtvMEIprxCp",
-    },
-  ];
+  const videos = content.blog_videos;
 
   return (
     <>
