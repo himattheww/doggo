@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid, IconButton, Divider } from "@mui/mate
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { footerStyle } from "../Styling/FooterStyle";
 
 const Footer = () => {
   const socialMediaIcons = [
@@ -16,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <Box component="footer" sx={{ backgroundColor: "#333", color: "#fff", py: 2, position: "fixed", bottom: 0, width: "100%", zIndex: 999}}>
+    <Box component="footer" sx={footerStyle.footer}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -44,13 +45,13 @@ const Footer = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Divider sx={{ my: 1 }} />
+        <Divider sx={footerStyle.divider} />
         <Typography variant="body2" align="center" gutterBottom>
           Connect with us on social media:
         </Typography>
-        <Box sx={{ textAlign: "center" }}>
+        <Box sx={footerStyle.socialMediaContainer}>
           {socialMediaIcons.map((item, index) => (
-            <IconButton key={index} onClick={() => handleSocialMediaClick(item.link)}>
+            <IconButton key={index} onClick={() => handleSocialMediaClick(item.link)} sx={footerStyle.iconButton}>
               <FontAwesomeIcon icon={item.icon} size="lg" />
             </IconButton>
           ))}
