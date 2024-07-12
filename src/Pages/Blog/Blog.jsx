@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Header from "../Components/Header";
-import goldenretriever from "../Assets/GoldenRetriever.jpg";
+import goldenretriever from "../../Assets/GoldenRetriever.jpg";
 import CloseIcon from "@mui/icons-material/Close";
 
 import {
@@ -14,9 +13,8 @@ import {
   CardMedia,
   IconButton,
 } from "@mui/material";
-import { blogPageStyle } from "../Styling/Blogstyle";
-import Footer from "../Components/Footer";
-import { content } from "../Importing/Content";
+import { blogPageStyle } from "./Blogstyle";
+import { content } from "../../Importing/Content";
 
 const Blog = () => {
   const [fullscreenVideo, setFullscreenVideo] = useState(null);
@@ -33,8 +31,7 @@ const Blog = () => {
 
   return (
     <>
-      <Header />
-      <Box
+      <Box id="blog"
         sx={{
           ...blogPageStyle.container,
           backgroundImage: `url(${goldenretriever})`,
@@ -107,7 +104,6 @@ const Blog = () => {
           </Box>
         )}
       </Box>
-      <Footer />
     </>
   );
 };

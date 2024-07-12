@@ -1,8 +1,9 @@
-// import goldenretriever from "../Assets/GoldenRetriever.jpg";
+import goldenretriever from "../..//Assets/GoldenRetriever.jpg";
 
 const container = {
   fontFamily: "Roboto, sans-serif",
   backgroundColor: "#5d4037",
+  backgroundImage: `url(${goldenretriever})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -15,6 +16,6 @@ const container = {
   textAlign: "center",
 };
 
-export const aboutPageStyle = {
+export const servicePageStyle = {
   container,
 };

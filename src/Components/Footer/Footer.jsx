@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid, IconButton, Divider } from "@mui/mate
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { footerStyle } from "../Styling/FooterStyle";
+import { footerStyle } from "./FooterStyle";
 
 const Footer = () => {
   const socialMediaIcons = [
@@ -11,6 +11,7 @@ const Footer = () => {
     { icon: faInstagram, link: "https://www.instagram.com/himattheww" },
     { icon: faTwitter, link: "https://twitter.com/" },
   ];
+
 
   const handleSocialMediaClick = (link) => {
     window.open(link, "_blank");

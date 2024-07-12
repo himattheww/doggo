@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "../Components/Header";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
-import { servicePageStyle } from "../Styling/Servicestyle";
+import { servicePageStyle } from "./Servicestyle";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Footer from "../Components/Footer";
-import { content } from "../Importing/Content";
+import { content } from "../../Importing/Content";
 
 const Service = () => {
   // Konten untuk setiap halaman carousel
@@ -14,8 +12,7 @@ const Service = () => {
 
   return (
     <>
-      <Header />
-      <Box sx={servicePageStyle.container}>
+      <Box id="services" sx={servicePageStyle.container}>
         <Container maxWidth="lg">
           <Carousel
             showStatus={false}
@@ -119,7 +116,6 @@ const Service = () => {
           </Carousel>
         </Container>
       </Box>
-      <Footer />
     </>
   );
 };

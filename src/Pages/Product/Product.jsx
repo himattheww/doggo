@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../Components/Header";
 import {
   Box,
   Container,
@@ -9,9 +8,9 @@ import {
   CardActionArea,
   CardMedia,
   CardContent,
+
 } from "@mui/material";
-import { productPageStyle } from "../../Styling/Productstyle";
-import Footer from "../../Components/Footer";
+import { productPageStyle } from "./Productstyle";
 import Catalog from "./Catalog";
 import { content } from "../../Importing/Content";
 
@@ -24,7 +23,6 @@ const Product = () => {
   const handleOpenCatalog = (product) => {
     setSelectedProduct(product);
     setOpenCatalog(true);
-    console.log("ini isi product", product);
   };
 
   const handleCloseCatalog = () => {
@@ -33,13 +31,12 @@ const Product = () => {
 
   return (
     <>
-      <Header />
-      <Box sx={productPageStyle.container}>
+      <Box id="products" sx={productPageStyle.container}>
         <Typography variant="h3" gutterBottom>
           Catalog
         </Typography>
         <Container maxWidth="lg">
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             {carouselProductContent.map((content, index) => (
               <Grid item xs={12} md={6} key={index}>
                 <Card
@@ -74,10 +71,8 @@ const Product = () => {
           onClose={handleCloseCatalog}
         />
       )}
-      <Footer />
     </>
   );
 };
-
 
 export default Product;

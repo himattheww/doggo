@@ -1,4 +1,4 @@
-import goldenretriever from "../Assets/GoldenRetriever.jpg";
+import goldenretriever from "../../Assets/GoldenRetriever.jpg";
 
 const container = {
   backgroundImage: `url(${goldenretriever})`,

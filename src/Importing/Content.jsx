@@ -46,9 +46,15 @@ const product_carouselContent = [
       "Red Barn Dogfood",
       "Farmer Dogfood",
     ],
-    description:
-      "Kami menyediakan berbagai jenis makanan anjing yang berkualitas",
-    productDescription: ["1", "2", "3", "4", "5", "6"],
+    description: "Kami menyediakan berbagai jenis makanan anjing yang berkualitas",
+    productDescription: [
+      "Makanan anjing premium dengan bahan alami dan bergizi untuk kesehatan optimal anjing Anda.",
+      "Makanan anjing segar yang disesuaikan dengan kebutuhan nutrisi harian anjing Anda.",
+      "Makanan anjing gourmet yang dirancang oleh ahli gizi hewan untuk kesehatan dan kebahagiaan anjing Anda.",
+      "Makanan anjing dengan keseimbangan nutrisi yang sempurna untuk mendukung gaya hidup aktif anjing Anda.",
+      "Makanan anjing dengan bahan-bahan berkualitas tinggi untuk mendukung sistem pencernaan dan kesehatan umum anjing Anda.",
+      "Makanan anjing buatan rumah dengan bahan-bahan segar dari pertanian lokal untuk kualitas dan rasa yang tak tertandingi."
+    ],
     image: dogfood,
     images: [dogfood1, dogfood2, dogfood3, dogfood4, dogfood5, dogfood6],
   },
@@ -62,12 +68,19 @@ const product_carouselContent = [
       "Dog Cage",
       "Dog Toy",
     ],
-    description:
-      "Kami menjual asesoris, mainan dan peralatan untuk anjing anda",
-    productDescription: ["1", "2", "3", "4", "5", "6"],
+    description: "Kami menjual asesoris, mainan dan peralatan untuk anjing anda",
+    productDescription: [
+      "Tali anjing yang kuat dan tahan lama, tersedia dalam berbagai ukuran dan desain untuk kenyamanan dan keamanan saat berjalan.",
+      "Kalung anjing yang stylish dan fungsional, dilengkapi dengan berbagai fitur untuk kenyamanan dan identifikasi anjing Anda.",
+      "Kit perawatan anjing lengkap yang berisi semua alat yang dibutuhkan untuk menjaga kebersihan dan kesehatan bulu anjing Anda.",
+      "Alat toilet anjing yang praktis dan mudah dibersihkan, ideal untuk pelatihan kebersihan anjing di rumah.",
+      "Kandang anjing yang aman dan nyaman, dirancang untuk memberikan tempat istirahat yang tenang bagi anjing Anda.",
+      "Mainan anjing yang menarik dan tahan lama, dirancang untuk memberikan hiburan dan stimulasi mental bagi anjing Anda."
+    ],
     image: dogtoys,
     images: [dogtoys1, dogtoys2, dogtoys3, dogtoys4, dogtoys5, dogtoys6],
   },
+
 ];
 
 const service_carouselContent = [
