@@ -22,19 +22,16 @@ const heading = {
   fontWeight: 700,
   fontSize: "2rem",
   color: "#333333",
+  marginBottom: "20px", // Memberikan jarak antara heading dan deskripsi
   "@media (max-width: 600px)": {
     fontSize: "1.5rem",
   },
 };
 
-const subheading = {
-  fontWeight: 600,
-  fontSize: "1.5rem",
+const icon = {
+  marginRight: "10px",
   color: "#333333",
-  marginTop: "20px",
-  "@media (max-width: 600px)": {
-    fontSize: "1.2rem",
-  },
+  fontSize: "1.5rem",
 };
 
 const text = {
@@ -42,10 +39,12 @@ const text = {
   marginBottom: "10px",
 };
 
+
+
 export const aboutPageStyle = {
   container,
   paper,
   heading,
-  subheading,
+  icon,
   text,
 };
