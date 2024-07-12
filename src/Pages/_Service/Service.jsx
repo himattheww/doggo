@@ -1,123 +1,94 @@
-import React from "react";
-import { Typography, Container, Grid, Paper, Box } from "@mui/material";
-import { servicePageStyle } from "./Servicestyle";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { content } from "../../Importing/Content";
+import React, { useState, useEffect } from "react";
+import "./style.css";
+import dogplaying from "../../Assets/Services/DogPlaying/dogplay.jpg";
+import doggrooming from "../../Assets/Services/DogGrooming/doggroomingg.jpg";
+import dogtraining from "../../Assets/Services/DogTraining/dogtrainingg.jpg";
+import doghealth from "../../Assets/Services/DogHealth/doghealthh.jpg";
 
-const Service = () => {
-  // Konten untuk setiap halaman carousel
-  const carouselContent = content.service_carouselContent;
+function Service() {
+  const [sliderItems] = useState([
+    {
+      img: dogplaying,
+      title: "Layanan Bermain",
+      type: "Playing",
+      description:
+        "Kami menyediakan area bermain yang aman dan menyenangkan bagi anjing Anda. Dengan fasilitas yang lengkap dan pengawasan yang ketat, anjing Anda akan menikmati waktu bermain yang berkualitas.",
+    },
+    {
+      img: doggrooming,
+      title: "Layanan Grooming",
+      type: "Grooming",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+    },
+    {
+      img: dogtraining,
+      title: "Layanan Pelatihan",
+      type: "Training",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+    },
+    {
+      img: doghealth,
+      title: "Layanan Perawatan Kesehatan",
+      type: "Health",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+    },
+  ]);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + sliderItems.length) % sliderItems.length
+    );
+  };
 
   return (
-    <>
-      <Box id="services" sx={servicePageStyle.container}>
-        <Container maxWidth="lg">
-          <Carousel
-            showStatus={false}
-            infiniteLoop={true}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: 15,
-                    transform: "translateY(-50%)",
-                    zIndex: 1,
-                    backgroundColor: "transparent",
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                >
-                  <FaChevronLeft size={24} color="#ffffff" />
-                </button>
-              )
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
-              hasNext && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  style={{
-                    position: "absolute",
-                    top: "50%",
-                    right: 15,
-                    transform: "translateY(-50%)",
-                    zIndex: 1,
-                    backgroundColor: "transparent",
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                >
-                  <FaChevronRight size={24} color="#ffffff" />
-                </button>
-              )
-            }
+    <div id= "services" className="slider">
+      <div className="list">
+        {sliderItems.map((item, index) => (
+          <div
+            className={`item ${index === currentIndex ? "active" : ""}`}
+            key={index}
+            style={{ display: index === currentIndex ? "block" : "none" }}
           >
-            {carouselContent.map((content, index) => (
-              <div key={index}>
-                <Grid container spacing={2}>
-                  {/* Kotak Utama */}
-                  <Grid item xs={12}>
-                    <Paper
-                      style={{
-                        padding: 20,
-                        backgroundColor: "#ffffff80",
-                      }}
-                    >
-                      <Typography variant="h4" sx={{ color: "#333333" }}>
-                        {content.title}
-                      </Typography>
-                    </Paper>
-                    <hr
-                      style={{
-                        borderTop: "2px solid #ffffff",
-                        width: "100%",
-                      }}
-                    />
-                  </Grid>
+            <img src={item.img} alt={item.title} />
+            <div className="content">
+              <div className="title">{item.title}</div>
+              <div className="type">{item.type}</div>
+              <div className="description">{item.description}</div>
+            </div>
+          </div>
+        ))}
+      </div>
 
-                  {/* Kotak Satu */}
-                  <Grid item xs={12}>
-                    <Paper
-                      style={{
-                        padding: 20,
-                        backgroundColor: "#ffffff80",
-                      }}
-                    >
-                      <Grid container spacing={2}>
-                        {/* Bagian Pertama */}
-                        <Grid item xs={6}>
-                          <Typography variant="body1" sx={{ color: "#333333" }}>
-                            {content.text}
-                          </Typography>
-                        </Grid>
+      <div className="thumbnail">
+        {sliderItems.map((item, index) => (
+          <div
+            className={`item ${index === currentIndex ? "active" : ""}`}
+            key={index}
+          >
+            <img src={item.img} alt={item.title} />
+          </div>
+        ))}
+      </div>
 
-                        {/* Bagian Kedua */}
-                        <Grid item xs={6}>
-                          <img
-                            src={content.image}
-                            alt="gambar"
-                            style={{ maxWidth: "100%" }}
-                          />
-                        </Grid>
-                      </Grid>
-                    </Paper>
-                  </Grid>
-                </Grid>
-              </div>
-            ))}
-          </Carousel>
-        </Container>
-      </Box>
-    </>
+      <div className="nextPrevArrows">
+        <button className="prev" onClick={handlePrev}>
+          {"<"}
+        </button>
+        <button className="next" onClick={handleNext}>
+          {">"}
+        </button>
+      </div>
+    </div>
   );
-};
+}
 
 export default Service;
