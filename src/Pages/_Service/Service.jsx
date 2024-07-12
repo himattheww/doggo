@@ -19,21 +19,21 @@ function Service() {
       title: "Layanan Grooming",
       type: "Grooming",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+        "Kami menawarkan layanan grooming profesional untuk menjaga penampilan dan kesehatan bulu anjing Anda. Dari mandi, potong kuku, hingga pemotongan rambut, kami memberikan perawatan yang terbaik.",
     },
     {
       img: dogtraining,
       title: "Layanan Pelatihan",
       type: "Training",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+        "Paket pelatihan khusus yang disesuaikan dengan kebutuhan dan tingkat keterampilan anjing Anda. Dari pelatihan dasar hingga pelatihan lanjutan, kami membantu anjing Anda menjadi lebih patuh dan terampil.",
     },
     {
       img: doghealth,
       title: "Layanan Perawatan Kesehatan",
       type: "Health",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.",
+        "Kami memberikan perawatan kesehatan yang komprehensif untuk menjaga kesehatan dan kesejahteraan anjing Anda. Layanan termasuk pemeriksaan kesehatan rutin, vaksinasi, dan perawatan medis lainnya.",
     },
   ]);
 
