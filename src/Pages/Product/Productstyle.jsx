@@ -1,31 +1,37 @@
-import goldenretriever from "../../Assets/GoldenRetriever.jpg";
-
-const container = {
-  backgroundImage: `url(${goldenretriever})`,
-  fontFamily: "Roboto, sans-serif",
-  backgroundColor: "#5d4037",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  padding: "50px",
-  minHeight: "100vh",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  textAlign: "center",
-  color: "#ffffff",
-};
-
-const card = {
-  cursor: "pointer",
-  transition: "transform 0.3s",
-  "&:hover": {
-    transform: "scale(1.05)",
+const styles = {
+  container: {
+    marginTop: '20px',
+    marginBottom: '20px',
+    backgroundColor: '#ffffff',
+    padding: '20px',
+    borderRadius: '8px',
+  },
+  sectionTitle: {
+    marginBottom: '20px',
+    color: '#333',
+    textAlign: 'center',
+    fontFamily: 'Arial, sans-serif',
+  },
+  card: {
+    transition: 'transform 0.3s ease-in-out',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    '&:hover': {
+      transform: 'scale(1.05)',
+      boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
+    },
+  },
+  cardMedia: {
+    height: '180px',
+  },
+  cardContent: {
+    textAlign: 'center',
+    backgroundColor: '#f9f9f9',
+  },
+  productName: {
+    fontWeight: 'bold',
+    color: '#333',
+    fontSize: '1rem',
   },
 };
 
-export const productPageStyle = {
-  container,
-  card,
-};
+export default styles;

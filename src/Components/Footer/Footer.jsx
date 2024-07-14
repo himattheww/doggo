@@ -26,7 +26,7 @@ const Footer = () => {
               Address
             </Typography>
             <Typography variant="body1">
-              Jalan Contoh No. 123, Kota Contoh, Indonesia
+              Jalan Matthew, Matthew city, Indonesia
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
@@ -34,7 +34,7 @@ const Footer = () => {
               Contact
             </Typography>
             <Typography variant="body1">
-              <FontAwesomeIcon icon={faPhoneAlt} /> +62 123-456-789
+              <FontAwesomeIcon icon={faPhoneAlt} /> +62 813-3393-0670
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
