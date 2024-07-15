@@ -1,0 +1,20 @@
+@media (max-width: 425px) {
+  .logo, .typhographyx {
+    display: none;
+  }
+
+  .menu-buttons {
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+
+  .header {
+    height: 80px; /* Perbesar tinggi navbar */
+  }
+}
+
+@media (min-width: 426px) {
+  .header {
+    height: 64px; /* Tinggi default navbar */
+  }
+}

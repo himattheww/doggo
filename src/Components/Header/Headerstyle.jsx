@@ -1,25 +1,25 @@
 const header = {
-  position: "fixed", // kalau di scroll tetap lengket
+  position: "fixed",
   width: "100%",
   zIndex: 1000,
   fontFamily: "Roboto, sans-serif",
-  backgroundColor: "#5d4037", // Warna cokelat hangat
+  backgroundColor: "#5d4037",
 };
 
 const logo = {
   justifyContent: "flex-start",
-  marginRight: "10px", // Jarak antara logo dan teks
-  height: "40px", // Ukuran tinggi logo
+  marginRight: "10px",
+  height: "40px",
 };
 
 const typhographyx = {
   justifyContent: "flex-start",
-  flexgrow: 1,
+  flexGrow: 1,
   fontFamily: "Roboto, sans-serif",
-  fontWeight: 700, // Ketebalan font yang lebih kuat
-  fontSize: "1.5rem", // Ukuran font yang lebih besar untuk menonjolkan merek
-  color: "#ffffff", // Teks berwarna putih agar kontras dengan latar belakang
-  marginLeft: "10px", // Jarak antara logo dan teks
+  fontWeight: 700,
+  fontSize: "1.5rem",
+  color: "#ffffff",
+  marginLeft: "10px",
 };
 
 const buttonn = {
@@ -30,13 +30,14 @@ const buttonn = {
   "&:hover": {
     backgroundColor: "#6d4c41",
   },
-  marginLeft: "10px", // Jarak antara tombol-tombol
+  marginLeft: "10px",
 };
 
 const toolbar = {
-  width: "100%", // Menyesuaikan lebar Toolbar dengan lebar layar
-  display: "flex", // Menggunakan flex untuk mengatur logo dan teks DogShop
-  alignItems: "center", // Menyatukan logo dan teks DogShop secara vertikal
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  
 };
 
 export const headerStyle = {

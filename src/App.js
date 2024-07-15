@@ -7,7 +7,8 @@ import Service from "./Pages/_Service/Service";
 import Product from "./Pages/Product/Product";
 import Blog from "./Pages/Blog/Blog";
 import Footer from "./Components/Footer/Footer"
-import VideoApp from "./Pages/testing/VideoApp"
+// import Combining from "./Pages/testing/Combining"
+
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Product/>
       <Blog/>
       <Footer/>
-      {/* <VideoApp/> */}
+
       
     </>
   );
